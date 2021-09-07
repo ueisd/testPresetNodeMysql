@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prod": "pm2-runtime ecosystem.config.js",
-    "start": "nodemon --legacy-watch ./src/index.js"
+    "start": "nodemon --inspect=0.0.0.0:9229 --legacy-watch ./src/index.js"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +14,8 @@
   "dependencies": {
     "express": "^4.17.1",
     "mongodb": "^4.0.0",
+    "mysql": "^2.18.1",
+    "mysql-import": "^5.0.21",
     "nodemon": "^2.0.12"
   }
 }
